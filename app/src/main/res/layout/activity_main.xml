@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonStartRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Start Recording"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonStopRecording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Recording"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextTranscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Transcription will appear here"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:minLines="5"
+        android:maxLines="10"/>
+
+    <Button
+        android:id="@+id/buttonSaveNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Note"/>
+
+    <Button
+        android:id="@+id/buttonNewNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="New Note"/>
+
+    <LinearLayout
+        android:id="@+id/notesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
